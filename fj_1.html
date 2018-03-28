@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电彩型体育彩票应付返奖奖金余额 - 云彩科技</title>
+    <link href="biz/css/style_002.css" rel="stylesheet">
+    <link href="biz/css/font-awesome.css" rel="stylesheet">
+    <link href="biz/css/bootstrap.css" rel="stylesheet">
+
+    <link href="biz/css/style.css" rel="stylesheet">
+
+
+    <script src="biz/bundles/modernizr.js"></script>
+
+</head>
+
+<body>
+
+<!--顶部样式 begin-->
+<div class="header-top clearfix">
+    <div class="c-container">
+        <div class="c-col-md-7 c-col-xs-12 fl">
+            <div class="home-nav">
+                <ul>
+                    <li><a href="">主页</a></li>
+                    <li><a href="">渠道管理</a></li>
+                    <li><a href="jk_commission_summary.html">财务管理</a></li>
+                    <li><a href="yw_1.html">业务报表</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="c-col-md-5 c-col-xs-12  clearfix">
+            <div class="font-13 inline-block padding-right-10">
+                <a href="javascript:void(0)" class="font-797979" onclick="OpenVision()">帷胜决策</a>
+                <a href="/biz/Message" class="font-797979">提醒</a>
+                <span class="state" id="spanMsgUnReadCount">57</span>
+            </div>
+            <div class="inline-block font-13 font-797979">
+                <span>杭州财务</span>
+
+            </div>
+            <div class="inline-block dropdown">
+                <button type="button" class="dropbtn"><img src="biz/Content/images/icon-down-1.png" class="padding-top-8"></button>
+                <div class="dropdown-content">
+
+                </div>
+            </div>
+            <div class=" inline-block font-AFB1B3 dropdown">
+                <button type="button" class="dropbtn"><img src="biz/Content/images/incon-6.png" style="vertical-align:middle"> 个人设置</button>
+                <div class="dropdown-content">
+
+                    <a href="/biz/PersonalSetting/PersonalInfo/EditPassword">修改密码</a>
+                    <a href="/biz/PersonalSetting/Authorize/AuthorizeTo">授权他人</a>
+                    <a href="/biz/PersonalSetting/Authorize/ExitSys">退出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--顶部样式 end-->
+<script src="biz/bundles/jquery-1.10.2.js"></script>
+
+<script type="text/javascript">
+    function OpenVision() {
+        $.ajax({
+            type: "post",
+            url: '/biz/Home/ValidateVision',
+            dataType: "json",
+            success: function (result) {
+                if (result.IsValid) {
+                    window.open('/biz/Home/OpenVision');
+                }
+                else {
+                    alert(result.Message);
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(textStatus + "  " + jqXHR.status + "  " + errorThrown);
+            }
+        });
+    }
+</script>
+    
+<!--LOGO SEARCH BEGIN-->
+<div class="padding-TopBottom-20 clearfix">
+    <div class="c-container clearfix">
+        <div class="c-col-md-4 c-col-xs-12 fl">
+            <div class="fl"><img src="biz/Content/images/logo.png"></div>
+        </div>
+        <div class="fl c-col-md-6 c-col-xs-12 clearfix">
+            
+        </div>
+        <div class="c-col-md-2 c-col-xs-12">
+            <div style="padding-bottom:5px;"><i class="font-7D8080 font-14">您的客户经理：</i><b>张剑</b></div>
+            <div><i class="font-7D8080 font-14">联系电话：</i><b>13910738931</b></div>
+        </div>
+    </div>
+</div>
+<!--LOGO SEARCH END-->
+
+    
+<!--NAV begin-->
+<div class="coreos-nav-collapse clearfix" style="line-height:50px;">
+    <div class="c-container">
+        <ul class="nav-1183 c-col-md-12 c-col-xs-12">
+            <li class="active">
+                <a href="jk_commission_summary.html">佣金结算</a>
+            </li>
+            <li>
+                <a href="gy_1.html">财务用表</a>
+            </li>
+            <li>
+                <a href="jf_1.html">缴费对账</a>
+            </li>
+            <li>
+                <a href="sj_1.html">财务数据维护</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--NAV end-->
+<div class="body-bg clearfix">
+    <div class="c-container clearfix">
+        <div class="bg-white clearfix">
+            <!--sidebar left begin-->
+            <div class="fl margin-top-20 c-col-lg-2 c-col-xs-12">
+                <ul id="accordion" class="accordion">
+                    <h1 class="padding-left-20">即开佣金结算</h1>
+                        <li>
+                            <a href="jk_commission_summary.html">即开佣金汇总表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="jk_private_summary.html">即开佣金对私汇总表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="jk_public_summary.html">即开佣金对公汇总表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="jk_commission_private_detail.html">即开佣金对私明细表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="jk_commission_public_detail.html">即开佣金对公明细表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                    <div class="border-top-1"></div>
+                    <h1 class="padding-left-20">电彩佣金结算</h1>
+                        <li>
+                            <a href="dc_commission_summary.html">电彩地市佣金汇总表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="dc_commission_summary_detail.html">电彩地市佣金明细表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="dc_commission_paycheck_list.html">电彩银行佣金发放清单</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="dc_commission_chanel_summary.html">电彩行业渠道汇总表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li><a href="dc_chanel_city.html">电彩行业渠道地市表</a><i class="fa fa-angle-right"></i></li>
+                        <li><a href="dc_chanel_detail.html">电彩行业渠道明细表</a><i class="fa fa-angle-right"></i></li>
+                    <div class="border-top-1"></div>
+                    <h1 class="padding-left-20">兑奖奖励结算</h1>
+                        <li>
+                            <a href="dj_1.html">门店兑奖奖励明细表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="dj_2.html">行业渠道兑奖奖励汇总表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="dj_3.html">行业渠道兑奖奖励地市表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="dj_4.html">行业渠道兑奖奖励明细表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                    <div class="border-top-1"></div>
+                    <h1 class="padding-left-20">促销奖励结算</h1>
+                        <li>
+                            <a href="cx_1.html">门店促销奖励结算表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="cx_2.html">行业渠道促销奖励汇总表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="cx_3.html">行业渠道促销奖励地市表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="cx_4.html">行业渠道促销奖励明细表</a><i class="fa fa-angle-right"></i>
+                        </li>
+                    <div class="border-top-1"></div>
+                    <h1 class="padding-left-20">返奖奖金</h1>
+                        <li class="active">
+                            <a href="fj_1.html" class="font-ffffff">应付返奖奖金余额表</a><i class="fa fa-angle-right font-ffffff"></i>
+                        </li>
+                </ul>
+            </div>
+            <!--sidebar left end-->
+    <!--sidebar left end-->
+    
+<div class="content clearfix">
+    <div id="divQuery" class="queryForm">
+        <form>
+            <div class="queryCondition-first clearfix">
+                <div class="queryCondition-title">
+                    统计时间：
+                </div>
+                <div class="queryCondition-content">
+                    <select id="ddlYear">
+                            <option selected="" value="2015">2015</option>
+                            <option selected="" value="2016">2016</option>
+                            <option selected="selected" value="2017">2017</option>
+                    </select>
+                    <span style="margin-left:10px">游戏</span>
+                    <select id="ddlMonth" name="month" style="margin-left:30px">
+                            <option style="display:block" selected="selected" value="1">超级大乐透</option>
+                    </select>
+                    <span style="margin-left:10px">月</span>
+                </div>
+            </div>
+
+
+            <div class="queryOperation clearfix">
+                <button id="btnQuery" type="button">查询</button>
+                <button id="btnExport" type="button">导出</button>
+            </div>
+        </form>
+    </div>
+    <div id="divResult" style="display: block;">
+        <div id="divHeader"><div class="reportHeader-title">2017年1月电彩应付返奖奖金余额</div>
+<div class="reportHeader-subTitle">
+    <div class="reportHeader-generateDate">报表生成时间：2017-2-8 14:35:00</div>
+    <div class="reportHeader-unit">单位：元</div><!--将居右的div放在第2个，以确保该div能与居左、居中的div在同一行显示-->
+    <div class="reportHeader-statisticDate">统计日期：2017年1月</div>
+</div>
+</div>
+        <div id="divGrid">
+            <table id="tbGrid" class="grid">
+                <thead>
+                    <tr>
+                        <th>期号</th>
+                        <th>应兑奖金</th>
+                        <th>已兑奖金</th>
+                        <th>未兑奖金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td>20170101</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr  class="text-center dark">
+                        <td>20170103</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>20170105</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center dark">
+                        <td>20170107</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>20170109</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center dark">
+                        <td>20170111</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr  class="text-center">
+                        <td>20170113</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr  class="text-center dark">
+                        <td>20170115</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr  class="text-center">
+                        <td>20170117</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr  class="text-center dark">
+                        <td>20170119</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center border-bottom-1">
+                        <td>合计</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="divEmptyResult" style="display: none;"><div class="emptyResult">查询结果为空</div>
+</div>
+</div>
+
+
+</div>
+
+
+        </div>
+    </div>
+    
+ <!--footer begin-->
+<div class="border-top-blue margin-bottom-20">
+    <div class="c-container margin-top-20">
+        <div class="footer clearfix">
+            <div class="fl"><img src="biz/Content/images/footer-logo.png"></div>
+            <div class="fr">
+                <p>
+                    Copyright © 2016 中体彩科技发展有限公司 版权所有<br>
+                    系统版本2016 R2
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+
+
+
+
+
+    <script src="biz/bundles/jquery.js?v=FVs3ACwOLIVInrAl5sdzR2jrCDmVOWFbZMY6g6Q0ulE1"></script>
+
+    <script src="biz/bundles/jqueryval.js?v=IW96crmD18U_QJGHhE4e0Q9HD2RD7ZSWph1QnBmKSXQ1"></script>
+
+    <script src="biz/bundles/bootstrap.js?v=2Fz3B0iizV2NnnamQFrx-NbYJNTFeBJ2GM05SilbtQU1"></script>
+
+    <script src="biz/bundles/jquery.unobtrusive-ajax.js?v=rLmqNvUU51zBzVHtvicmiQa_RaL3i8XqDUB4xfcuL_U1"></script>
+
+
+    <!--财务管理公用脚本文件-->
+    <script src="biz/Areas/FinancialManage/Scripts/Common.js"></script>
+    <script src="biz/Areas/FinancialManage/Scripts/ReportMonths.js"></script>
+    <script src="biz/Areas/FinancialManage/Scripts/TagGroup.js"></script>
+    <script src="biz/Areas/FinancialManage/Scripts/Grid.js"></script>
+    <script src="biz/Areas/FinancialManage/Scripts/Pager.js"></script>
+    <!--财务管理公共组件脚本文件-->
+    <script type="text/javascript">initTagGroup('divcity');</script>
+    <script type="text/javascript">initTagGroup('divchannel');</script>
+
+    <!--页面自定义脚本块-->
+    
+    <!--<script type="text/javascript">-->
+        <!--$(function () {-->
+            <!--$("#divResult").hide();-->
+            <!--$("#divEmptyResult").hide();-->
+        <!--});-->
+
+        <!--$("#btnQuery").click(function () {-->
+            <!--if (validateInputs()) {-->
+                <!--$.ajax({-->
+                    <!--type: "post",-->
+                    <!--url: '/biz/FinancialManage/InstantCommision_PrivateSummary/Query',-->
+                    <!--data: $("#divQuery form").serialize(),-->
+                    <!--success: function (result) {-->
+                        <!--if (result.HasData) {-->
+
+                            <!--$("#divResult").show();-->
+                            <!--$("#divEmptyResult").hide();-->
+
+                            <!--$("#divHeader").html(result.HeaderView);-->
+                            <!--$("#divGrid").html(result.GridView);-->
+                            <!--mergeRepeatedRowHeader();-->
+                        <!--}-->
+                        <!--else {-->
+                            <!--$("#divResult").hide();-->
+                            <!--$("#divEmptyResult").show();-->
+                        <!--}-->
+                    <!--}-->
+                <!--});-->
+            <!--}-->
+        <!--});-->
+
+        <!--$("#btnExport").click(function () {-->
+            <!--if (validateInputs()) {-->
+                <!--var form = $("#divQuery form");-->
+                <!--form.attr("action", '/biz/FinancialManage/InstantCommision_PrivateSummary/Export');-->
+                <!--form.attr("method", "post");-->
+                <!--form.submit();-->
+            <!--}-->
+        <!--});-->
+    <!--</script>-->
+
+
+
+
+</body>
+</html>
